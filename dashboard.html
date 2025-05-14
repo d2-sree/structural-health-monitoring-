@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Details | Structural Health Monitoring</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-building-shield"></i>
+                <span>StructureGuard</span>
+            </div>
+            <nav class="nav">
+                <a href="/">Dashboard</a>
+                <a href="/" class="active">Structures</a>
+                <a href="#">Reports</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="user-profile">
+                <img src="assets/images/user.jpg" alt="User">
+                <span>Admin</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="structure-detail">
+                <h1 id="structure-name">Loading...</h1>
+                <div class="structure-meta">
+                    <span id="structure-type"></span>
+                    <span id="structure-age"></span>
+                    <span id="structure-location"></span>
+                    <span id="last-inspection"></span>
+                </div>
+
+                <div class="sensor-grid" id="sensor-grid">
+                    <!-- Filled by JavaScript -->
+                </div>
+
+                <div class="sensor-chart-container">
+                    <h2><i class="fas fa-chart-line"></i> Sensor Data History</h2>
+                    <div class="chart-container">
+                        <canvas id="sensorChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
